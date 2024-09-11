@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Media</title>
+</head>
+<body>
+    <h1>Imagens</h1>
+    <p>Ajustando a imagem de acordo com o tamanho da tela do usuário</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png">
+        <source media="(max-width: 1050px)" srcset="Imagens/m.png">
+        <img src="imagens/g.png" alt="Imagem grande">
+    </picture>
+</body>
+</html>

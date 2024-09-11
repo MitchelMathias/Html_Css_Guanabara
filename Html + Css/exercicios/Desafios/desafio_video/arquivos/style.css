@@ -1,0 +1,16 @@
+.centralizacao {
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+button{
+    background-color: orange ;
+}
