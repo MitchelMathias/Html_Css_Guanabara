@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+main{
+    padding-top: 50px;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.475);
+    max-width: 750px;
+    height: 100vh;
+}
+
+header{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.607);
+    color: white;
+    padding: 3vh;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+table{
+    margin: auto;
+    margin-bottom: 50px;
+    width: 300px;
+    border: inset 4px black;
+}
+
+td{
+    color: black;
+    background-color: white;
+    text-align: center;
+    border: inset 4px black;
+}
