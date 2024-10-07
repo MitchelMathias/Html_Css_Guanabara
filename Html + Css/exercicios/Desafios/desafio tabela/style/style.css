@@ -1,20 +1,26 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
 *{
     margin: 0px;
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(128, 128, 128, 0.379);
+    font-family: "cookie", "cursive", "sans-serif";
+    font-size: 1.5em;
+    font-weight: bold;
     color: white;
 }
 
 main{
+    box-shadow: 0px 0px 5px 2px black;
     padding-top: 50px;
+    padding-bottom: 50px;
     margin: auto;
-    background-color: rgba(128, 128, 128, 0.475);
+    background-color: gray;
     max-width: 750px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header{
@@ -23,18 +29,45 @@ header{
     padding: 3vh;
     background-color: rgb(0, 0, 0);
     text-align: center;
+    font-size: 2em;
+}
+
+caption{
+    color: black;
+    padding-top: 50px;
+    font-size: 2em;
 }
 
 table{
     margin: auto;
-    margin-bottom: 50px;
     width: 300px;
-    border: inset 4px black;
+    border: 5px solid black;
+}
+
+#container,#container1{
+    overflow-x: auto;
+}
+
+table.filmes{
+    width: auto;
+    border-collapse: collapse;
+}
+
+table.ultima{
+    width: 700px;
 }
 
 td{
+    padding: 5px;
     color: black;
     background-color: white;
     text-align: center;
-    border: inset 4px black;
+    border: 5px solid black;
 }
+
+th{
+    text-align: center;
+    border: 5px solid black;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
