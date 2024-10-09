@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+*{
+    margin: 0px;
+    font-family: "caveat", "cursive", Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+body,html{
+    width: auto;
+    height: 100%;
+    font-size: 1.2em;
+}
+
+header{
+    font-size: 1.5em;
+    box-shadow: 0px 0px 5px 1px black;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+header p {
+    padding-top: 15px;
+}
+
+main{
+    max-width: 768px;
+    min-height: 100vh;
+    text-indent: 2em;
+    box-shadow: 0px 0px 3px 1px black;
+    margin: auto;
+    padding: 15px;
+    text-align: justify;
+    background-color: darkgray;
+}
+
+main p{
+    padding-top: 1em;
+}
+
+main ul {
+    font-weight: bolder;
+    color: black;
+    list-style-position: inside;
+    padding-top: 1.5em;
+    padding-left: 0em;
+    padding-bottom: 30px;
+}
+
+main a{
+    color: black;
+    text-decoration: none;
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+.container{
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção de 16:9 */
+}
+
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
