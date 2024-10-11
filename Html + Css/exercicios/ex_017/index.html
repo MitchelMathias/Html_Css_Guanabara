@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="formulario.php" autocomplete="on" method="post">
+            <p>
+                <label for="name">Nome:</label>
+                <input id="name" name="name" type="text" autocomplete="name" required minlength="3" maxlength="35" placeholder="nome e sobrenome">
+            </p>
+            <p>
+                <label for="pass">Senha:</label>
+                <input type="password" id="pass" name="pass" placeholder="password" required minlength="8">
+            </p>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>
