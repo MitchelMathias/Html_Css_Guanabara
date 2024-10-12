@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+
+}
+
+header{
+    display: none;
+}
+
+main h1{
+    text-align: center;
+}
+
+main p{
+    padding: 1em;
+    margin: auto;
+    max-width: 600px;
+    line-height: 1.5em;
+}
+
+main::after{
+    max-width: 600px;
+    font-size: 0.6em;
+    content: "(Este exercício foi feito no dia 12/10/2024 e estou aprendendo Media Queries)";
+}

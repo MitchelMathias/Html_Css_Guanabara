@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: darkgray;
+}
+
+header h1{
+    text-align: center;
+}
+
+header menu{
+    display: block;
+}
+
+menu ul{
+    background-color: gray;
+    list-style-type: none;
+}
+
+menu li{
+    background-color: rgb(77, 77, 77);
+    display: inline-block;
+    padding-block-start: 10px;
+}
+
+main{
+    margin: auto;
+    text-align: justify;
+    max-width: 600px;
+}
+
+main h1{
+    padding: 1em;
+}
+
+p{
+    padding-top: 1em;
+    text-indent: 1.5em;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
