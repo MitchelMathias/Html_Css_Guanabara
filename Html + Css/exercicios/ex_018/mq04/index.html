@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilos/celular.css">
     <title>Media Queries</title>
 </head>
-<body>
+<body onresize="tamanho()">
     <header>
         <h1>Media Queries</h1>
         <button id="menu" onclick="clickMenu()">Menu</button>
@@ -34,6 +34,17 @@
         </article>
     </main>
         <script>
+
+        function tamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display = 'none'
+            }
+
+        }
+
         function clickMenu(){
             if (itens.style.display == 'block'){
                 itens.style.display = 'none';
@@ -42,13 +53,6 @@
                 itens.style.display = 'block';
             }
         }
-        window.addEventListener('resize', function(){
-            if (window.innerWidth > 767) { 
-                itens.style.display = 'block';
-            } else {
-                itens.style.display = 'none';
-            }
-        });
     </script>
 </body>
 </html>
