@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/celular.css">
+    <title>Media Queries</title>
+</head>
+<body>
+    <header>
+        <h1>Media Queries</h1>
+        <button id="menu" onclick="clickMenu()">Menu</button>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum aliquid deleniti voluptatem error eveniet, vel dolore porro impedit repellendus fugiat maxime commodi veniam distinctio officia necessitatibus! Minus, iusto corporislorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius atque obcaecati id, temporibus doloremque est fuga recusandae aliquam ipsum delectus accusantium repudiandae voluptatem accusamus facilis ipsam iusto quasi excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt maxime distinctio quaerat aut nostrum voluptatibus dolor quidem aliquam? Odio consequatur nobis maiores sunt rerum, illo aperiam repellendus adipisci eum?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum aliquid deleniti voluptatem error eveniet, vel dolore porro impedit repellendus fugiat maxime commodi veniam distinctio officia necessitatibus! Minus, iusto corporislorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius atque obcaecati id, temporibus doloremque est fuga recusandae aliquam ipsum delectus accusantium repudiandae voluptatem accusamus facilis ipsam iusto quasi excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt maxime distinctio quaerat aut nostrum voluptatibus dolor quidem aliquam? Odio consequatur nobis maiores sunt rerum, illo aperiam repellendus adipisci eum?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum aliquid deleniti voluptatem error eveniet, vel dolore porro impedit repellendus fugiat maxime commodi veniam distinctio officia necessitatibus! Minus, iusto corporislorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius atque obcaecati id, temporibus doloremque est fuga recusandae aliquam ipsum delectus accusantium repudiandae voluptatem accusamus facilis ipsam iusto quasi excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt maxime distinctio quaerat aut nostrum voluptatibus dolor quidem aliquam? Odio consequatur nobis maiores sunt rerum, illo aperiam repellendus adipisci eum?</p>
+
+        </article>
+    </main>
+        <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none';
+            }
+            else{
+                itens.style.display = 'block';
+            }
+        }
+        window.addEventListener('resize', function(){
+            if (window.innerWidth > 767) { 
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
