@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section>
+
+            <div id="login">
+                <h1>Olá, Aluno</h1>
+                <p>Sistema de Registro de Alunos e Funcionarios</p>
+
+                <button><a href="#">Acesse Aqui</a></button>
+            </div>
+
+            <div id="registro">
+                <h2>Registre-se</h2>
+
+                <form action="formulario.pho" method="post" autocomplete="on">
+                    <p>
+                        <input type="text" name="nome_completo" id="inome_completo" minlength="10" placeholder="Nome Completo" required>
+                    </p>
+
+                    <p>
+                        <input type="text" name="cpf" id="icpf" required minlength="11" placeholder="CPF">
+                    </p>
+
+                    <p>
+                        <input type="tel" name="cel" id="icel" required minlength="11" placeholder="Celular">
+                    </p>
+
+                    <p>
+                        <input type="email" name="mail" id="imail" placeholder="Email" required >
+                    </p>
+
+                    <p>
+                        <input type="password" name="senha" id="isenha" placeholder="Senha" required minlength="8" pattern="(?=.*[A-Z])(?=.*[@$!%*?&])"> 
+                    </p>
+                    <input id="enviar" type="submit" value="Enviar">
+                    <input id="limpar" type="reset" value="limpar">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
