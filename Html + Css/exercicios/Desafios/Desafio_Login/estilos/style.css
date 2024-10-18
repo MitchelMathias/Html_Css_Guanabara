@@ -3,7 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive,sans-serif, Arial, Helvetica, sans-serif;
 }
 
 html, body{
@@ -60,7 +60,7 @@ div#login button{
     left: 50%;
     transform: translate(-50%);
     width: 90%;
-    background-color:  rgb(255, 255, 255);
+    background-color:  rgba(255, 255, 255, 0.913);
     border: 3px solid black;
     border-radius: 50px;
     padding: 5px;
@@ -72,9 +72,9 @@ div#login button a{
     font-weight: bolder
 }
 
-div#login button:hover {
-    color: black;
-    background-color: white;
+div#login button:hover, div#login button a:hover{
+    color: white;
+    background-color: rgb(130, 130, 130);
     cursor: pointer;
 }
 
