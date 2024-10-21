@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schellin</title>
+    <style>
+        *{
+            font-family: cursive;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html{
+            height: 100vh;
+        }
+
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2px;
+            height: 15vh;
+            color: white;
+            text-align: center;
+            background-color: #0D0003;
+        }
+
+
+        main{ 
+            width: auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            background-color: #F25C05;
+            border-radius: 10px;
+            height: 85vh;
+            border: 5px solid black;
+        }
+
+        main h2{
+            text-align: center;
+            font-size: 2em;
+            background-color: #0D0003;
+            color: white;
+            padding: 35px;
+            border-radius: 50%;
+            border: 5px solid rgb(255, 255, 255);
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+
+        button{
+            cursor: pointer;
+            margin: 5px;
+            font-weight: bolder;
+            border: 5px dashed black;
+            background-color: greenyellow;
+            border-radius: 15px;
+            font-size: 1.3em;
+            padding: 10px;
+        }
+
+        button#nao{
+            position: absolute;
+        }
+
+
+
+        button:hover{
+            background-color: white;
+        }
+
+
+        footer{
+            margin-top: 1px;
+            padding: 10px;
+            text-align: center;
+            background-color:  rgb(0, 0, 0);
+        }
+
+        footer a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Para Meu Gigante amigo</h1>
+    </header>
+    <main class="container">
+        <h2>Cuzinho quando voltar?</h2>
+        <div>
+            <button type="submit" id="sim"><a href="https://www.youtube.com/shorts/s6kT2AX4RcY">Sim</a></button>
+            <button type="button" id="nao">Não</button>
+        </div>
+    </main>
+    <footer>
+        <p><a type="contato" target="_blank" href="https://wa.me/5553991431660">Entre em contato</a></p>
+    </footer>
+
+    <script>
+        const botaoNao = document.getElementById("nao");
+    
+        botaoNao.addEventListener("mouseenter", moverBotao);
+        botaoNao.addEventListener("click", moverBotao);
+    
+        function moverBotao() {
+          const container = document.querySelector('.container');
+          const larguraContainer = container.offsetWidth;
+          const alturaContainer = container.offsetHeight;
+    
+          const novaPosicaoX = Math.random() * (larguraContainer - botaoNao.offsetWidth);
+          const novaPosicaoY = Math.random() * (alturaContainer - botaoNao.offsetHeight);
+    
+          botaoNao.style.left = `${novaPosicaoX}px`;
+          botaoNao.style.top = `${novaPosicaoY}px`;
+        }
+    </script>
+</body>
+</html>
